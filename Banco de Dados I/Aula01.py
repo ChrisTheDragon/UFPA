@@ -53,4 +53,3 @@ if __name__ == "__main__":
     start_time = time.time()
     print('Custo de folha após o layoff: ', calcular_custo_de_folha(df))
     print('Tempo de execução: ', time.time() - start_time)
-    print(len(df.index))
