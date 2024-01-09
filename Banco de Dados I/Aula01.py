@@ -27,7 +27,7 @@ def calcular_custo_de_folha(df):
     return df['Salário'].sum()
 
 def layoff(df):
-    df = df.sample(frac=1).reset_index(drop=True)
+    df = df.sort_values(by='Salário', ascending=False)
     df = df.iloc[12000:]
     return df
 
